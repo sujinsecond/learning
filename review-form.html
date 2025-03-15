@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fieldset</title>
+  </head>
+  <body>
+    <h2>폼 1번</h2>
+    <form action="">
+      <fieldset>
+        <legend>게시물검색</legend>
+        <select name="" id="">
+          <option value="">제목1</option>
+        </select>
+        <input type="search" name="" id="" placeholder="검색어입력" />
+        <button type="submit">검색</button>
+      </fieldset>
+    </form>
+    <br />
+    <input type="radio" name="group" id="mail" />
+    <label for="mail">이메일1</label>
+    <input type="radio" name="group" id="mail2" />
+    <label for="mail2">이메일2</label>
+    <br /><br />
+
+    <h2>폼 8번</h2>
+    <li>
+      <strong>담당부서</strong>
+      <div>경영지원실</div>
+    </li>
+    <li>
+      <strong>뷰어다운</strong>
+      <div><img src="./images/wmpo.svg" alt="" />한글뷰어1 <img src="./images/wmpo.svg" alt="" />한글뷰어2</div>
+    </li>
+    <li>
+      <strong>만족도조사</strong>
+      <p>페이지의 내용이나 사용편의성에 대해 만족하십니까?</p>
+      <form action="">
+        <fieldset>
+          <legend>만족도조사</legend>
+          <div><input type="radio" name="group" id="a" /><label for="a">만족😀</label> <input type="radio" name="group" id="a" /><label for="a">보통😀</label> <input type="radio" name="group" id="a" /><label for="a">불만족😀</label> <input type="radio" name="group" id="a" /><label for="a">매우불만족😀</label></div>
+          <input type="search" name="" id="" placeholder="의견을 보내줘요" style="width: 240px" /><br />
+          <button type="reset">초기화</button>
+          <button type="submit">입력</button>
+        </fieldset>
+      </form>
+    </li>
+    <br /><br />
+
+    <h2>폼 4번</h2>
+    <form action="">
+      <fieldset>
+        <legend>상세검색</legend>
+        <table>
+          <caption>
+            상세검색
+          </caption>
+          <colgroup>
+            <col style="width: 200px" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>분류</th>
+              <td>
+                <input type="checkbox" name="group" id="category1" />
+                <label for="category1">기념품</label>
+                <input type="checkbox" name="group" id="category2" />
+                <label for="category2">도서</label>
+                <input type="checkbox" name="group" id="category3" />
+                <label for="category3">배지</label>
+              </td>
+            </tr>
+            <tr>
+              <th>자료명</th>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <th>국적-시대</th>
+              <td>
+                <select name="" id="">
+                  <option value="">선택1</option>
+                  <option value="">선택2</option>
+                  <option value="">선택3</option>
+                </select>
+                <select name="" id="">
+                  <option value="">선택</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>년대</th>
+              <td><input type="number" name="" id="" min="0" />yyyy</td>
+            </tr>
+            <tr>
+              <th>입수처&기증자</th>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <th>공공누리</th>
+              <td>
+                <input type="checkbox" name="" id="type1" />
+                <label for="type1">제1유형</label>
+                <input type="checkbox" name="" id="type2" />
+                <label for="type1">제2유형</label>
+                <input type="checkbox" name="" id="type3" />
+                <label for="type1">제3유형</label>
+                <input type="checkbox" name="" id="type4" />
+                <label for="type1">제4유형</label>
+              </td>
+            </tr>
+          </tbody>
+          <button type="reset">초기화</button>
+          <button type="reset">전송</button>
+        </table>
+      </fieldset>
+    </form>
+    <br />
+
+    <h2>공통속성</h2>
+    <label for="inserted">입력된값</label>
+    <input type="text" value="입력된값" id="inserted" />
+
+    <input type="radio" name="" id="dataa" value="데이터전달값" />
+    <label for="dataa">데이터</label>
+    <br />
+    <div>이름</div>
+    <input type="text" name="" id="" placeholder="이름을 입력해주세요" /><br />
+    <form action="">
+      <input type="text" name="" id="" required /><br />
+      <input type="email" name="" id="" required /><br />
+      <button>전송</button>
+    </form>
+
+    <input type="text" disabled value="작성되었지만 비활성" />비활성<br />
+    <input type="text" readonly value="작성됨" />읽기전용<br /><br />
+
+    <input type="text" name="" id="autofocus" />초점이동<br />
+    <form action="">
+      <input type="text" name="" id="" minlength="5" maxlength="10" required />최소/최대글자수 <input type="number" name="" id="" min="0" max="10" /><br />
+      <input type="date" name="" id="" min="2025-02-08" max="2025-02-12" /><br />
+      <button>전송</button>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>제목</legend>
+        <ul>
+          <li><input type="text" />한줄 글상자</li>
+          <li><input type="password" name="" id="" />첨부파일</li>
+          <li><input type="url" name="" id="" />주소입력</li>
+          <li><input type="email" name="" id="" />이메일입력</li>
+          <li><input type="number" name="" id="" />숫자입력</li>
+          <li><input type="tel" name="" id="" />전화번호입력</li>
+          <li><input type="search" name="" id="" />검색어 입력</li>
+          <li><input type="date" name="" id="" />달력</li>
+          <li><textarea name="" id="" cols="10" rows="5">여러줄입력</textarea></li>
+          <li><input type="range" name="" id="" /></li>
+          <li><progress></progress></li>
+          <li><input type="color" name="" id="" />색상선택</li>
+          <li><button type="button">범용버튼</button></li>
+          <li><button type="submit">전송버튼</button></li>
+          <li><button type="reset">초기화</button></li>
+          <li><button>전송버튼</button></li>
+          <li>
+            <select name="" id="">
+              <option value="">선택하세요1</option>
+              <option value="number1">0102929292929</option>
+              <option value="number1">0102922</option>
+              <option value="number1">01029888</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="multiple">
+              <option value="">선택하세요2</option>
+              <option value="number1">02902092929</option>
+              <option value="number1">100</option>
+              <option value="number1">200</option>
+              <option value="number1">300</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="">
+              <optgroup label="선택그룹1">
+                <option value="">선택하세요1</option>
+                <option value="number1">01</option>
+                <option value="number1">02</option>
+                <option value="number1">03</option>
+              </optgroup>
+              <optgroup label="선택그룹2">
+                <option value="">선택하세요2</option>
+                <option value="number1">04</option>
+                <option value="number1">05</option>
+                <option value="number1">06</option>
+                <option value="number1">07</option>
+              </optgroup>
+            </select>
+          </li>
+          <li><input type="radio" name="group" id="a" /><label for="a">선택1</label></li>
+          <li><input type="radio" name="group" id="b" /><label for="b">선택2</label></li>
+          <li><input type="checkbox" name="v" id="c" /><label for="c">선택A</label> <input type="checkbox" name="v" id="d" /><label for="d">선택B</label> <input type="checkbox" name="v" id="e" /><label for="e">선택C</label></li>
+          <br />
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.nesting {
+  a {
+    color: red;
+
+    span {
+      color: chartreuse;
+    }
+  }
+  .em {
+    color: coral;
+  }
+}

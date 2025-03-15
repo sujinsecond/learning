@@ -1,0 +1,29 @@
+/*0점*/
+* {
+  color: #000;
+}
+
+/*1점*/
+div {
+  color: cadetblue;
+}
+
+/*10점*/
+.specificity {
+  color: chocolate;
+}
+
+/*100점*/
+#selector {
+  color: aquamarine;
+}
+
+/*1000점*/
+/* * {
+  color: rgb(6, 76, 83) !important;
+}
+
+* {
+  color: rgb(6, 23, 100) !important;
+  color: blueviolet !important;
+} */
