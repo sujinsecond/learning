@@ -1,0 +1,178 @@
+.wrap {
+  width: 66.625rem;
+  border: 0.0626rem solid #eee;
+  padding: 2.69rem 2.56rem 2.75rem 2.56rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.88rem;
+  align-items: center;
+}
+
+.icon-img {
+  display: grid;
+  gap: 0;
+  width: 2.25rem;
+  height: 1.6875rem;
+  border-radius: 0.25rem;
+  padding: 0.09rem 0.21rem;
+  background-color: #fff;
+  border: 2px solid #2e11ed;
+  justify-content: center;
+  align-items: center;
+
+  .icon-area {
+    background: url(../images/uis-triangle.svg) no-repeat center top 0;
+    height: 0.4375rem;
+    display: grid;
+    justify-self: stretch;
+    align-self: center;
+    background-color: coral;
+  }
+  .news {
+    width: 1.56rem;
+    color: #000;
+    font-size: 0.5625rem;
+    font-weight: 500;
+    line-height: 0.8125rem;
+  }
+}
+
+.bigtitle {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  background-color: blueviolet;
+  gap: 0.69rem;
+  align-items: center;
+}
+
+.bigtitle2 {
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 2.1875rem;
+}
+.card-group {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.link_area {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+  background-color: yellow;
+}
+
+.image {
+  width: 20rem;
+  height: 11.25rem;
+  background-image: url("../images/17_picture_2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/* 두 번째와 세 번째 카드의 이미지를 위한 스타일 */
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.title {
+  width: 100%;
+  color: #222;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-block;
+  padding-right: 1.88rem;
+}
+
+.date {
+  width: 100%;
+  color: #222;
+  font-size: 0.8rem;
+  padding-right: 1.88rem;
+}
+.content-all {
+  display: grid;
+  gap: 1.56rem;
+  padding: 1.44rem 0 0 1.88rem;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+}
+.badge-area {
+  width: 100%;
+  height: 2.56rem;
+  padding-top: 1.5rem;
+  background-color: rgb(234, 102, 102, 0.4);
+  position: relative;
+}
+.badge {
+  display: flex;
+  width: 2.5rem;
+  height: 1.125rem;
+  background: #a099d3;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pagination {
+  display: flex;
+  gap: 0.56rem;
+}
+.pagination .two-buttons {
+  /* grid-template-columns: repeat(2, 1fr);
+  background-color: brown;
+  gap: -0.06rem; */
+  display: flex;
+}
+
+.readall {
+  width: 6.3rem;
+  height: 1.8rem;
+  border: 1px solid #c0c0c0;
+  justify-content: center;
+  align-items: center;
+  padding: 0.28rem 0.8rem;
+  color: #000;
+  font-size: 0.875rem;
+  display: flex;
+  background: url(../images/btn_green_arrow.svg) no-repeat right 0.1rem center;
+}
+.go-left {
+  display: flex;
+  width: 1.8125rem;
+  height: 1.8125rem;
+  overflow: hidden;
+  border: 1px solid #555;
+  justify-content: center;
+  align-items: center;
+  background-color: yellowgreen;
+  background: url(../images/btn_left.svg) no-repeat center center;
+  position: relative;
+  z-index: 2;
+}
+.go-right {
+  display: flex;
+  width: 1.8125rem;
+  height: 1.8125rem;
+  overflow: hidden;
+  border: 1px solid #555;
+  justify-content: center;
+  align-items: center;
+  background-color: yellowgreen;
+  background: url(../images/btn_right.svg) no-repeat center center;
+  z-index: 1;
+  margin-left: -1px;
+}

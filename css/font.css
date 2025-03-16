@@ -13,7 +13,7 @@ body {
 .text-outline {
   font-family: ;
   font-size: 4rem;
-  color: blue;
+  color: #111111;
   font-weight: 900;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: brown;
